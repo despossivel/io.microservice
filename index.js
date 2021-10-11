@@ -13,10 +13,7 @@ io.origins("*:*").on('connection', socket => {
 	socket.on('runResult', async data => {
 
 
-		console.log('runResult >>> ', data)
-
-
-		const response = await axios.get(`http://192.168.0.102/api/resultado.php`)
+		const response = await axios.get(`http://216.238.68.14/api/resultado.php`)
 		const CLEAR = response.data.dados.filter(({ nome }) => nome !== 'branco')
 
 
