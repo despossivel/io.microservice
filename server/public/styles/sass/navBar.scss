@@ -1,0 +1,29 @@
+
+		.navbar {
+			background-color: none !important;
+			border-bottom: 2px solid $corTranslucida;
+		}
+
+		.navbar-item, .navbar-item, .navbar-link {
+			color: $corTexto !important;
+			font-weight: 700;
+	}
+
+		.navbar-item img{
+			width: 60px !important;
+		}
+
+		strong{
+			color: $corTexto !important;
+		}
+
+		a {
+			color: $corTexto !important;
+		}
+
+		.navbar-start{}
+		.navbar-start a:hover{
+			// background:$corTranslucida !important;
+			border-radius: 10px;
+   	 		 background: $corTexto;
+		}

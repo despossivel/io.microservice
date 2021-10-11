@@ -1,0 +1,181 @@
+@import "./variaveis.scss";
+
+* {
+	box-sizing: border-box;
+}
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+	margin: 0;
+	font-size: 16px;
+	background: $corPrimaria;
+	background: -webkit-linear-gradient(to right, $corPrimaria, $corSub);
+	background: linear-gradient(to right, $corPrimaria, $corSub);
+}
+
+@import "./globals.scss";
+@import "./transitions.scss";
+@import "./flexbox.scss";
+@import "./navBar.scss";
+@import "./logo.scss";
+@import "./mediaQuerys/width.scss";
+@import "./mediaQuerys/height.scss";
+
+.barHeigth {
+	height: 600px;
+}
+
+#dropdown {
+	display: none;
+}
+
+.button.is-link {
+	background-color: $corTexto !important;
+	color: $corTextoButton !important;
+}
+
+.collapsible-body {
+	background: rgba(222, 228, 230, 0.2784313725490196) !important;
+	margin-top: 4px;
+	border-radius: 8px;
+}
+
+.boxDisponivel {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	a {
+		display: flex;
+		padding: 19px;
+		i {
+		}
+		span {
+			margin-left: 17px;
+		}
+	}
+}
+
+.collapsible-header {
+	font-size: 1rem !important;
+	// background-color: $corTranslucida !important;
+	background: rgba(222, 228, 230, 0.2784313725) !important;
+}
+
+.textTop {
+	margin-top: 20%;
+	color: $corPrimaria !important;
+	text-shadow: 1px 1px 1px $corTexto;
+}
+
+.textCorPrimario {
+	color: $corPrimaria !important;
+}
+
+.containerText {
+	background: #fff;
+	color: $corTexto;
+	padding: 40px;
+}
+
+.backgroudImage {
+	background-image: url("../../imgs/adult-busy-cellphone-1083622.jpg");
+	background-repeat: no-repeat;
+	background-position: center; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: cover; /* Resize the background image to cover the entire */
+}
+
+.title,
+.subtitle {
+	color: $corTexto !important;
+}
+
+.boxButtonBottom {
+	float: right;
+}
+
+.textRoot {
+	color: $corTexto !important;
+}
+
+.superior {
+	position: absolute !important;
+	width: 100%;
+	z-index: 9;
+}
+
+.boxButtonBottom a {
+	color: $corTexto !important;
+	font-weight: 700;
+}
+
+.link a {
+	color: $corTextoButton !important;
+	font-weight: 700;
+}
+
+.button strong {
+	color: $corTextoButton !important;
+}
+
+.content strong,
+small,
+p {
+	color: $corTexto !important;
+}
+
+.imgMin {
+	max-width: 50% !important;
+}
+
+.notificationFormulario {
+	display: none;
+}
+
+.iconSize {
+	font-size: 25px !important;
+}
+.iconLeft {
+	float: left !important;
+	margin-left: 15px !important;
+}
+
+.boxRight {
+	float: right !important;
+}
+
+// 	ul:not(.browser-default) {
+//
+// }
+
+// 	ul:not(.browser-default)>li {
+// 		float: left !important;
+//     margin-left: 15PX !important;
+// }
+
+.logoCenter {
+	padding: 20px;
+
+	img {
+		width: 80px;
+	}
+}
+
+.box {
+	margin-top: 10%;
+	background-color: #fff;
+	border-radius: 6px;
+	box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+	color: #4a4a4a;
+	display: block;
+	padding: 1.25rem;
+}
+
+.backgroudFull {
+	height: 100%;
+	position: absolute;
+	width: 100%;
+	background: #f7f7f7;
+}

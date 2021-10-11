@@ -1,0 +1,10 @@
+admin/node_modules/**
+admin/node_modules/**
+admin/.sass-cache/**
+scrips/node_modules/**
+admin/package-lock.json
+package-lock.json
+node_modules/**
+.sass-cache/**
+.vscode/**
+yarn.lock

@@ -1,0 +1,40 @@
+{
+  "name": "OICentavus",
+  "version": "0.1.0",
+  "scripts": {
+    "start": "node index.js",
+    "admin": "cd admin && npm start",
+    "server": "nodemon index.js --ignore __test__",
+    "test": "jest",
+    "dev": "concurrently --kill-others-on-fail \"npm run server\"",
+    "sassPublic": "sass server/public/styles/sass/index.scss:server/public/styles/css/index.css --watch",
+    "mongoConnect": "mongo 143.208.11.38:27017 -u 'centavus' -p 'db@123#' --authenticationDatabase admin",
+    "mongoConnectDev": "mongo -u 'centavus' -p 'db@123#' --authenticationDatabase admin",
+    "monogoDev": "mongo -u 'centavus' -p 'db@123#' --authenticationDatabase 'admin'",
+    "mongoConnectAtlas": "mongo 'mongodb+srv://cluster0-ep251.gcp.mongodb.net/centavus?retryWrites=true&w=majority'  --username dev"
+  },
+  "dependencies": {
+    "axios": "^0.22.0",
+    "body-parser": "^1.18.3",
+    "consign": "^0.1.6",
+    "cors": "^2.8.5",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "global": "^4.4.0",
+    "http": "0.0.0",
+    "ip": "^1.1.5",
+    "jsonwebtoken": "^8.4.0",
+    "moment": "^2.24.0",
+    "mongodb": "^3.1.10",
+    "path": "^0.12.7",
+    "sass": "^1.35.1",
+    "socket.io": "^2.2.0"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.0",
+    "faker": "^4.1.0",
+    "jest": "^24.8.0",
+    "nodemon": "^1.18.9",
+    "supertest": "^4.0.2"
+  }
+}

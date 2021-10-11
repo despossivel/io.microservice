@@ -1,0 +1,45 @@
+
+	  #main {
+        display: flex;
+     
+   }
+	  #main > article {
+	    flex: 1;
+	    order: 1;
+	  }
+	  #main > nav, 
+	  #main > aside {
+	    flex: 20vw;
+	  }
+	  #main > nav {
+	   
+	    order: 1;
+	  }
+	  #main > aside {
+	    
+	    order: 2;
+      }
+      
+      .textCenter{
+        text-align: center;
+      }
+
+      header{
+        /* height: 6.5vh; */
+        background:$corPrimaria;
+      }
+      
+      footer {
+        background:$corPrimaria;
+        // height: 10vh;
+        text-align: center;
+        border-top: 2px solid $corTranslucida;
+
+        
+
+
+   }
+	  article, nav, aside {
+	    padding: 1em;
+		}
+		

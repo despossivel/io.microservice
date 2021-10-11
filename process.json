@@ -1,0 +1,7 @@
+{
+    "script": "index.js",
+    "watch": true,
+    "ignore_watch": ["./server/public/uploads"],
+    "name": "Centavus"
+}
+

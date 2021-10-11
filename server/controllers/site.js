@@ -1,0 +1,1 @@
+module.exports.index = async (application, req, res) => res.status(200).render('index');

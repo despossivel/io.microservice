@@ -1,0 +1,18 @@
+version: '2'
+services:
+  io:
+    build: .
+    command: node index.js
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - "5005:5005"
+    container_name: io_centavus
+    networks:
+      - centavus
+    restart: always
+
+networks:
+  centavus:
+    driver: bridge  
