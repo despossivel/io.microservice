@@ -7,13 +7,22 @@ const app = require('./config/server'),
 
 
 io.origins("*:*").on('connection', socket => {
-	socket.on('registry', data => socket.join(`/hallowins`).emit('registry', "hallowins"))
+	socket.on('registry', data => {
+
+		console.log('registry')
+
+		socket.join(`/hallowins`).emit('registry', "hallowins")
+
+	})
+
 
 
 	socket.on('runResult', async data => {
 
+		console.log('runResult ', runResult)
 
-		const response = await axios.get(`http://216.238.68.14/api/resultado.php`)
+
+		const response = await axios.get(`http://216.238.68.14/api/resultado.php`).catch(e => console.error(e))
 		const CLEAR = response.data.dados.filter(({ nome }) => nome !== 'branco')
 
 
@@ -56,7 +65,7 @@ io.origins("*:*").on('connection', socket => {
 			terceiro: terceiroMasculino
 		}
 
- 
+
 		// .to(`/hallowins`)
 		socket.emit('runResult', {
 			totalVotos: response.data.totalVotos,
