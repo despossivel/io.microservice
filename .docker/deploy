@@ -1,0 +1,6 @@
+#!/bin/bash
+git checkout develop
+docker-compose -f ./docker-compose.yml up -d --build
+docker commit io despossivel/io-hallowins
+docker push despossivel/io-hallowins
+docker-compose down

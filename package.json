@@ -11,7 +11,8 @@
     "mongoConnect": "mongo 143.208.11.38:27017 -u 'centavus' -p 'db@123#' --authenticationDatabase admin",
     "mongoConnectDev": "mongo -u 'centavus' -p 'db@123#' --authenticationDatabase admin",
     "monogoDev": "mongo -u 'centavus' -p 'db@123#' --authenticationDatabase 'admin'",
-    "mongoConnectAtlas": "mongo 'mongodb+srv://cluster0-ep251.gcp.mongodb.net/centavus?retryWrites=true&w=majority'  --username dev"
+    "mongoConnectAtlas": "mongo 'mongodb+srv://cluster0-ep251.gcp.mongodb.net/centavus?retryWrites=true&w=majority'  --username dev",
+    "ssh": "ssh root@216.238.68.14"
   },
   "dependencies": {
     "axios": "^0.22.0",

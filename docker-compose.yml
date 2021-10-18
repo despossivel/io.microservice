@@ -8,7 +8,5 @@ services:
       - /usr/app/node_modules
     ports:
       - "5005:5005"
-    container_name: io_centavus
-    networks:
-      - mysql-compose-network
+    container_name: io
     restart: always

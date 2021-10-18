@@ -14,17 +14,20 @@ const app = require('./config/server'),
 //   '3306'
 var mysql = require('mysql');
 var connection = mysql.createConnection({
-	host: 'mysqlsrv',
+	host: '216.238.68.14',
 	user: 'root',
 	password: 'MySql2019!',
 	database: 'testedb'
 });
 
+
+
 connection.connect();
 
 
-
 io.origins("*:*").on('connection', socket => {
+
+
 	socket.on('registry', data => {
 
 		console.log('registry')
@@ -108,7 +111,7 @@ io.origins("*:*").on('connection', socket => {
 
 			});
 
-			connection.end();
+			// connection.end();
 
 
 
