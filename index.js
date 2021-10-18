@@ -14,7 +14,7 @@ const app = require('./config/server'),
 //   '3306'
 var mysql = require('mysql');
 var connection = mysql.createConnection({
-	host: '216.238.68.14',
+	host: 'mysqlsrv',
 	user: 'root',
 	password: 'MySql2019!',
 	database: 'testedb'
