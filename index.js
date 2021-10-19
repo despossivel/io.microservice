@@ -1,7 +1,7 @@
 'use strict';
 
 const app = require('./config/server'),
-	server = app.listen(process.env.PORT || 5005, _ => console.log('SERVER ON-LINE')),
+	server = app.listen(5005, _ => console.log('SERVER ON-LINE')),
 	axios = require("axios"),
 	io = require('socket.io').listen(server);
 
