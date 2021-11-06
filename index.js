@@ -47,7 +47,7 @@ io.origins("*:*").on('connection', socket => {
 
 
 
-		connection.query('SELECT count(votos.votos) AS numeroDeVotos, candidatos.* 	FROM votos 	RIGHT JOIN candidatos ON votos.idCandidato = candidatos.id	GROUP BY candidatos.id 	ORDER BY candidatos.nome DESC', function (error, results, fields) {
+		connection.query('SELECT count(votos.votos) AS numeroDeVotos, candidatos.* 	FROM votos 	RIGHT JOIN candidatos ON votos.idCandidato = candidatos.id WHERE candidatos.status = 1 	GROUP BY candidatos.id 	ORDER BY candidatos.nome DESC', function (error, results, fields) {
 			if (error) throw error;
 
 			connection.query('SELECT * FROM votos', function (errorVotos, resultsVotos, fieldsVotos) {
