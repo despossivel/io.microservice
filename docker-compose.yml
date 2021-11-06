@@ -7,6 +7,6 @@ services:
       - .:/usr/app/
       - /usr/app/node_modules
     ports:
-      - "5005:5005"
+      - "5555:5555"
     container_name: io
     restart: always
