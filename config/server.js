@@ -14,7 +14,6 @@ app.use('/static', express.static('server/public'));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(cors());
-// app.use(multer(multerConfig))
 
 consign().include('./server/routes')
      .then('server/controllers')
